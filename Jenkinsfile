@@ -34,7 +34,7 @@ pipeline {
                     allowMissing: true,
                     alwaysLinkToLastBuild: false,
                     keepAll: true,
-                    reportDir: 'CypressAutomation/mochawesome-report',
+                    reportDir: 'mochawesome-report',
                     reportFiles: 'mochawesome.html',
                     reportName: "Mochawesome Tests Report"
                     ])
