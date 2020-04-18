@@ -1,0 +1,12 @@
+{
+  "name": "Nivi",
+  "email": "maddymk8@gmail.com",
+  "gender": "Female",
+  "password": "Password123",
+  "successMessage": "Success! The Form has been submitted successfully!.",
+  "productName": [
+    "Blackberry",
+    "Nokia Edge",
+    "iphone X"
+  ]
+}
