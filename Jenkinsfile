@@ -28,4 +28,16 @@ pipeline {
             }
         }
     }
+    post {
+         always {
+                    publishHTML (target: [
+                    allowMissing: true,
+                    alwaysLinkToLastBuild: false,
+                    keepAll: true,
+                    reportDir: 'CypressAutomation/mochawesome-report',
+                    reportFiles: 'mochawesome.html',
+                    reportName: "Mochawesome Tests Report"
+                    ])
+                }
+    }
 }
