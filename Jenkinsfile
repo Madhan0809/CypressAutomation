@@ -21,6 +21,7 @@ pipeline {
             steps {
                 sh 'npm install'
                 sh 'npm run bddTests'
+                sh 'node index.js'
             }
         }
         stage('Deploy') {
