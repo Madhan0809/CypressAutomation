@@ -1,6 +1,6 @@
 pipeline {
     agent {
-    label 'ec2-fleet'
+    label 'master'
   }
 
     tools {nodejs "node"}
