@@ -5,5 +5,7 @@
     "env": {
       "url": "https://rahulshettyacademy.com"
     },
-    "projectId": "11zq28"
+    "projectId": "11zq28",
+    "ignoreTestFiles": "*.js",
+    "testFiles": "**/*.{feature,features}"
   }  
