@@ -19,7 +19,7 @@ pipeline {
     }
         stage('Functional Tests') {
             steps {
-                sh 'npm run singleTestChrome'
+                sh 'npm run bddTests'
             }
         }
         stage('Deploy') {
@@ -34,9 +34,9 @@ pipeline {
                     allowMissing: true,
                     alwaysLinkToLastBuild: false,
                     keepAll: true,
-                    reportDir: 'mochawesome-report',
-                    reportFiles: 'mochawesome.html',
-                    reportName: "Mochawesome Tests Report"
+                    reportDir: 'test/report/',
+                    reportFiles: 'cucumber_report.html',
+                    reportName: "Automation Tests Report"
                     ])
                 }
     }
