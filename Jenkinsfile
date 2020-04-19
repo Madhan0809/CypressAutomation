@@ -35,7 +35,7 @@ pipeline {
                     allowMissing: true,
                     alwaysLinkToLastBuild: false,
                     keepAll: true,
-                    reportDir: 'test/report/',
+                    reportDir: 'test/report',
                     reportFiles: 'cucumber_report.html',
                     reportName: "Automation Tests Report"
                     ])
