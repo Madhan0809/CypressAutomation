@@ -7,7 +7,7 @@ const loginPage = new LoginPage;
 const pdPage = new PersonalDetailsPage;
 
 Given('I am in the Selfridges login page', () => {
-    cy.visit("https://d02www.selfridges.com/GB/en/app/account/signin-register");
+    cy.visit(Cypress.env('url') + "/account/signin-register")
 });
 
 When('I enter valid credentials', () => {
