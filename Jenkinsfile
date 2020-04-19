@@ -23,22 +23,20 @@ pipeline {
                 sh 'npm run bddTests'
             }
         }
-        stage('Deploy') {
+        stage('Publish Cucumber report') {
             steps {
-                echo 'Deploying....'
+                sh 'node index.js'
             }
         }
     }
     post {
-        steps {
-                sh 'node index.js'
-            }
+
          always {
                     publishHTML (target: [
                     allowMissing: true,
                     alwaysLinkToLastBuild: false,
                     keepAll: true,
-                    reportDir: 'report',
+                    reportDir: 'test/report',
                     reportFiles: 'cucumber_report.html',
                     reportName: "Automation Tests Report"
                     ])
