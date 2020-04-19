@@ -48,8 +48,8 @@ node_modules/.bin/cypress run --reporter mochawesome --headed --browser chrome
 # References:
 
 ## Page Object:
-https://github.com/mrharry/cypress-framework-pageObject
-https://medium.com/reactbrasil/deep-diving-pageobject-pattern-and-using-it-with-cypress-e60b9d7d0d91
+1. https://github.com/mrharry/cypress-framework-pageObject
+2. https://medium.com/reactbrasil/deep-diving-pageobject-pattern-and-using-it-with-cypress-e60b9d7d0d91
 
 ## BDD:
 1. https://learndevtestops.com/2019/09/29/cucumber-integration-with-cypress-io-in-5-minutes/
