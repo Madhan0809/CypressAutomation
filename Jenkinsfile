@@ -32,6 +32,16 @@ pipeline {
     post {
 
          always {
+                   cucumber failedFeaturesNumber: -1, 
+                   failedScenariosNumber: -1, 
+                   failedStepsNumber: -1, 
+                   fileIncludePattern: '**/*.json', 
+                   jsonReportDirectory: 'cypress/cucumber-json', 
+                   pendingStepsNumber: -1, 
+                   skippedStepsNumber: -1, 
+                   sortingMethod: 'NATURAL', 
+                   undefinedStepsNumber: -1
+                   
                     publishHTML (target: [
                     allowMissing: true,
                     alwaysLinkToLastBuild: false,
