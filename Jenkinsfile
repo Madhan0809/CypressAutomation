@@ -21,7 +21,6 @@ pipeline {
             steps {
                 sh 'npm install'
                 sh 'npm run bddTests'
-                sh 'node index.js'
             }
         }
         stage('Deploy') {
@@ -31,6 +30,9 @@ pipeline {
         }
     }
     post {
+        steps {
+                sh 'node index.js'
+            }
          always {
                     publishHTML (target: [
                     allowMissing: true,
